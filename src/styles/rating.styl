@@ -1,0 +1,33 @@
+.rating-block
+
+  .rating-block__rating-stars-panel
+    display inline-block
+
+    .rating-stars-panel__star
+      display inline-block
+      cursor pointer
+      background url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHkxPSIuNDAyIiB4MT0iLjY1NSIgeTI9Ii44ODMiIHgyPSIuNTczIiBpZD0iYSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLW9wYWNpdHk9Ii45OTYiIHN0b3AtY29sb3I9IiNjNmM2YzYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjk4OCIgc3RvcC1jb2xvcj0iIzg3ODc4NyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGZpbGw9InVybCgjYSkiIGQ9Ik04LS4ybDEuOTI4IDUuOTg1IDUuODcuMTI5LTQuNjc5IDMuODI4IDEuNyA2LjA2NEw4IDEyLjE4N2wtNC44MiAzLjYxOSAxLjctNi4wNjRMLjIwMyA1LjkxNGw1Ljg3LS4xM0w4LS4xOThsMS45MjggNS45ODR6Ii8+PC9zdmc+') center no-repeat
+
+  .rating-block__rating-stars-panel--sm
+    .rating-stars-panel__star
+      width 16px
+      height @width
+
+  .rating-block__rating-stars-panel--md
+    .rating-stars-panel__star
+      width 24px
+      height @width
+
+  .rating-block__rating-stars-panel--lg
+    .rating-stars-panel__star
+      width 36px
+      height @width
+
+  for i in (1..5)
+    .rating-block__rating-stars-panel--{ i }-of-5
+      for j in (1..i)
+        .rating-stars-panel__star:nth-child({ j })
+          background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHkxPSIuNDAyIiB4MT0iLjY1NSIgeTI9Ii44ODMiIHgyPSIuNTczIiBpZD0iYSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLW9wYWNpdHk9Ii45OTYiIHN0b3AtY29sb3I9IiNmZmRjMDAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjk4OCIgc3RvcC1jb2xvcj0iI2Y3MCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGZpbGw9InVybCgjYSkiIGQ9Ik04LS4ybDEuOTI4IDUuOTg1IDUuODcuMTI5LTQuNjc5IDMuODI4IDEuNyA2LjA2NEw4IDEyLjE4N2wtNC44MiAzLjYxOSAxLjctNi4wNjRMLjIwMyA1LjkxNGw1Ljg3LS4xM0w4LS4xOThsMS45MjggNS45ODR6Ii8+PC9zdmc+')
+
+
+
