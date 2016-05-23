@@ -3,8 +3,8 @@
 
 ## Запуск
 ```
-git clone git@github.com/vitaliy-pavlenko/tutu-frontend-js-test.git
-cd tutu-frontend-js-test
+git clone git@github.com/vitaliy-pavlenko/tutu-frontend-html-test.git
+cd tutu-frontend-html-test
 npm install
 npm run build
 ```
