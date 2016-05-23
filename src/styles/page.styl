@@ -1,0 +1,220 @@
+.clearfix
+  &:after
+    content ''
+    display table
+    clear both
+
+.page-content
+  width 1024px
+  margin 0 auto
+  margin-top 30px
+  font-family sans-serif
+  font-size 14px
+
+.page-content__header
+  margin 50px 0 60px 240px
+  box-shadow 0 2px 6px rgba(0, 0, 0, .2)
+  border-radius 10px
+
+.page-content__nav
+  padding 0 40px 0 40px
+
+.nav__nav-list
+  padding 0
+  list-style none
+  height 60px
+  &--justified
+    text-align justify
+    &:after
+      content ''
+      display inline-block
+      width 100%
+
+.nav-list__list-item
+  display inline-block
+  line-height 60px
+
+.nav-list__nav-link
+  &--violet
+    color #4900a4
+  &--green
+    color #14731b
+  &--blue
+    color #0e73d9
+  &--orange
+    color #dd4c00
+  &--black
+    color #333
+  &--red
+    color #b60700
+
+.page-content__column
+  float left
+
+.page-content__column--left
+  width 200px
+  margin-right 40px
+  font-size 12px
+
+.left-column__title
+  margin-bottom 50px
+
+.page-content__column--right
+  width 784px
+  margin-bottom 50px
+
+.page-content__main-title
+  margin 0
+
+.page-content__main-title--collapse
+  display inline-block
+  vertical-align middle
+
+.progress-bar
+  width 588px
+
+.progress-bar--collapse
+  display inline-block
+  float right
+
+.progress-bar__progress-list
+  padding 0
+  list-style none
+  font-size 10px
+  font-style italic
+  line-height 12px
+  margin 8px 0
+
+.progress-bar__progress-item
+  box-sizing border-box
+  display inline-block
+  width 20%
+  text-align center
+  background-color #f6f6f6
+  border-left 1px solid #fff
+  color #999
+  box-shadow 0 1px 1px #999 inset;
+  &:nth-child(1)
+    border-radius 5px 0 0 5px
+  &:nth-child(5)
+    border-radius 0 5px 5px 0
+  &--current
+    color #fff
+    background #9fd206
+    box-shadow 0 2px 3px #597602 inset;
+  &--done
+    color #fff
+    background #3bad19
+    box-shadow 0 2px 3px #21600e inset;
+
+.common-form__legend
+  color #cacaca
+  font-style italic
+  position relative
+  font-size 12px
+  margin 20px 0 20px 0
+  &:after
+    content ''
+    display block
+    width 650px
+    position absolute
+    right 0
+    top 8px
+    border-top 1px solid #cacaca
+
+.common-form__raw
+  margin-top 30px
+  &:after
+    content ''
+    display table
+    clear both
+
+.common-form__label
+  display block
+  width 30%
+  float left
+  &:last-child
+    width: 40%
+  &.common-form__label--filled
+    input
+    select
+      width 80%
+  &--full-size
+    width 100% !important
+
+.common-form__label-title
+  display block
+  font-weight bold
+  margin 10px 0
+
+.common-form__radio-label
+  display inline-block
+  text-align center
+  padding 5px 10px
+
+.common-form__inside-radio-label--dotted
+  border-bottom 1px dotted #000
+
+.common-form__radio-input
+  display none
+  &:checked + .common-form__radio-label
+    background-color #8cb903
+    color #fff
+    border-radius 5px
+    & > .common-form__inside-radio-label--dotted
+      border none
+
+.common-form__form-placeholder
+  display block
+  font-size 12px
+  color #cacaca
+  margin 10px 0
+
+.common-form__controls
+  background-color #f2f2f2
+  position relative
+  height 80px
+
+.common-form__btn
+  position absolute
+  top 20px
+  padding 5px 50px
+  height 40px
+  border-radius 20px
+  outline none
+  border none
+  color #fff
+  background rgba(211,238,132,1)
+  background -moz-linear-gradient(top, rgba(211,238,132,1) 0%, rgba(164,216,7,1) 7%, rgba(164,216,7,1) 93%, rgba(135,179,3,1) 100%)
+  background -webkit-gradient(left top, left bottom, color-stop(0%, rgba(211,238,132,1)), color-stop(7%, rgba(164,216,7,1)), color-stop(93%, rgba(164,216,7,1)), color-stop(100%, rgba(135,179,3,1)))
+  background -webkit-linear-gradient(top, rgba(211,238,132,1) 0%, rgba(164,216,7,1) 7%, rgba(164,216,7,1) 93%, rgba(135,179,3,1) 100%)
+  background -o-linear-gradient(top, rgba(211,238,132,1) 0%, rgba(164,216,7,1) 7%, rgba(164,216,7,1) 93%, rgba(135,179,3,1) 100%)
+  background -ms-linear-gradient(top, rgba(211,238,132,1) 0%, rgba(164,216,7,1) 7%, rgba(164,216,7,1) 93%, rgba(135,179,3,1) 100%)
+  background linear-gradient(to bottom, rgba(211,238,132,1) 0%, rgba(164,216,7,1) 7%, rgba(164,216,7,1) 93%, rgba(135,179,3,1) 100%)
+
+  &::-moz-focus-inner
+    padding 0
+    border 0
+
+  &:disabled
+    background rgba(219,219,219,1)
+    background -moz-linear-gradient(top, rgba(219,219,219,1) 0%, rgba(180,180,180,1) 7%, rgba(180,180,180,1) 93%, rgba(143,143,143,1) 100%)
+    background -webkit-gradient(left top, left bottom, color-stop(0%, rgba(219,219,219,1)), color-stop(7%, rgba(180,180,180,1)), color-stop(93%, rgba(180,180,180,1)), color-stop(100%, rgba(143,143,143,1)))
+    background -webkit-linear-gradient(top, rgba(219,219,219,1) 0%, rgba(180,180,180,1) 7%, rgba(180,180,180,1) 93%, rgba(143,143,143,1) 100%)
+    background -o-linear-gradient(top, rgba(219,219,219,1) 0%, rgba(180,180,180,1) 7%, rgba(180,180,180,1) 93%, rgba(143,143,143,1) 100%)
+    background -ms-linear-gradient(top, rgba(219,219,219,1) 0%, rgba(180,180,180,1) 7%, rgba(180,180,180,1) 93%, rgba(143,143,143,1) 100%)
+    background linear-gradient(to bottom, rgba(219,219,219,1) 0%, rgba(180,180,180,1) 7%, rgba(180,180,180,1) 93%, rgba(143,143,143,1) 100%)
+
+  &--forward-btn
+    right 10px
+    &:after
+      content '\2192'
+      font-size: 20px;
+      margin-left: 5px;
+
+  &--back-btn
+    left 10px
+    &:before
+      content '\2190'
+      font-size: 20px;
+      margin-right: 5px;

@@ -29,5 +29,132 @@
             <button class="btn btn--md">Кнопка</button>
             <button class="btn btn--lg">Кнопка</button>
         </div>
+        <div class="page-block">
+            <div class="page-content">
+                <header class="page-content__header">
+                    <nav class="page-content__nav">
+                        <ul class="nav__nav-list nav__nav-list--justified">
+                            <li class="nav-list__list-item">
+                                <a href="#" class="nav-list__nav-link nav-list__nav-link--violet">Личный кабинет</a>
+                            </li>
+                            <li class="nav-list__list-item">
+                                <a href="#" class="nav-list__nav-link nav-list__nav-link--green">Раздел 1</a>
+                            </li>
+                            <li class="nav-list__list-item">
+                                <a href="#" class="nav-list__nav-link nav-list__nav-link--blue">Раздел 2</a>
+                            </li>
+                            <li class="nav-list__list-item">
+                                <a href="#" class="nav-list__nav-link nav-list__nav-link--orange">Раздел 3</a>
+                            </li>
+                            <li class="nav-list__list-item">
+                                <a href="#" class="nav-list__nav-link nav-list__nav-link--black">Раздел 4</a>
+                            </li>
+                            <li class="nav-list__list-item">
+                                <a href="#" class="nav-list__nav-link nav-list__nav-link--red">Раздел 5</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <aside class="page-content__column page-content__column--left">
+                    <div class="left-column__title">&#9728; TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</div>
+                    <div class="left-column__desc">Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному контакт-центру.</div>
+                </aside>
+                <section class="page-content__column page-content__column--right">
+                    <h1 class="page-content__main-title page-content__main-title--collapse">Заполните форму</h1>
+                    <div class="progress-bar progress-bar--collapse">
+                        <ul class="progress-bar__progress-list">
+                            <li class="progress-bar__progress-item progress-bar__progress-item--done">1
+                            <li class="progress-bar__progress-item progress-bar__progress-item--done">2
+                            <li class="progress-bar__progress-item progress-bar__progress-item--current">3
+                            <li class="progress-bar__progress-item">4
+                            <li class="progress-bar__progress-item">5
+                        </ul>
+                    </div>
+                    <form class="common-form">
+                        <div class="common-form__legend">Общая информация</div>
+                        <div class="common-form__raw">
+                            <label class="common-form__label common-form__label--filled">
+                                <span class="common-form__label-title">Фамилия</span>
+                                <input type="text" name="surname" autocomplete="off">
+                            </label>
+                            <label class="common-form__label common-form__label--filled">
+                                <span class="common-form__label-title">Имя</span>
+                                <input type="text" name="name" autocomplete="off">
+                            </label>
+                            <label class="common-form__label common-form__label--filled">
+                                <span class="common-form__label-title">Отчество</span>
+                                <input type="text" name="patronymic" autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="common-form__raw">
+                            <div class="common-form__label">
+                                <span class="common-form__label-title">Меняли фамилию?</span>
+                                <input class="common-form__radio-input" type="radio" name="surname-changed" value="true" id="surnmame-changed-true">
+                                <label class="common-form__radio-label" for="surnmame-changed-true">
+                                    <span class="common-form__inside-radio-label--dotted">Да</span>
+                                </label>
+                                <input class="common-form__radio-input" type="radio" name="surname-changed" value="false" id="surname-changed-false">
+                                <label class="common-form__radio-label" for="surname-changed-false">
+                                    <span class="common-form__inside-radio-label--dotted">Нет</span>
+                                </label>
+                            </div>
+                            <label class="common-form__label">
+                                <span class="common-form__label-title">Пол</span>
+                                <input class="common-form__radio-input" type="radio" name="gender" value="male" id="gender-male">
+                                <label class="common-form__radio-label" for="gender-male">
+                                    <span class="common-form__inside-radio-label--dotted">Муж</span>
+                                </label>
+                                <input class="common-form__radio-input" type="radio" name="gender" value="female" id="gender-female">
+                                <label class="common-form__radio-label" for="gender-female">
+                                    <span class="common-form__inside-radio-label--dotted">Жен</span>
+                                </label>
+                            </label>
+                            <label class="common-form__label common-form__label--filled">
+                                <span class="common-form__label-title">Семейное положение</span>
+                                <select name="status">
+                                    <option value="1">Женат / Замужем</option>
+                                    <option value="2">В разводе</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="common-form__raw">
+                            <label class="common-form__label common-form__label--filled">
+                                <span class="common-form__label-title">Гражданство</span>
+                                <select name="nationality">
+                                    <option value="1">Российская Федерация</option>
+                                    <option value="2">Украина</option>
+                                </select>
+                            </label>
+                            <label class="common-form__label">
+                                <span class="common-form__label-title">Дата рождения</span>
+                                <select name="birthday-day">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                                <select name="birthday-month">
+                                    <option value="1">января</option>
+                                    <option value="2">февраля</option>
+                                </select>
+                                <select name="birthday-year">
+                                    <option value="1">1990</option>
+                                    <option value="2">1991</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="common-form__raw">
+                            <label class="common-form__label common-form__label--full-size common-form__label--filled">
+                                <span class="common-form__label-title">Место рождения</span>
+                                <input type="text" name="birthplace" autocomplete="off">
+                                <span class="common-form__form-placeholder">Например, Россия, Комсомольск-на-Амуре</span>
+                            </label>
+                        </div>
+                        <div class="common-form__controls">
+                            <button class="common-form__btn common-form__btn--back-btn" disabled>Назад</button>
+                            <button class="common-form__btn common-form__btn--forward-btn">Далее</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
     </body>
 </html>
